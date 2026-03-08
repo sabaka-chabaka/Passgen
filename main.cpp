@@ -12,10 +12,10 @@ int main(int argc, char *argv[])
 }
 
 string res::getPassword() {
-    string characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    string characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(){}[]:;";
     string password;
 
-    for (int i = 0; i < 16; ++i) {
+    for (int i = 0; i < 32; ++i) {
         int index = std::rand() % characters.length();
         password += characters[index];
     }
